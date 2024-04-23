@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      const formData = new FormData();
+      const code = "8fc95a69adbc08a22bb90e19e66b389d";
+
+      formData.append("name", "Tushar");
+      formData.append("code", code);
+
+      fetch("https://dev.29kreativ.com/recruitment/levels/", {
+        method: "POST",
+        body: formData,
+        headers: {
+          Authorization: "Bearer " + code,
+        },
+      })
+        .then((response) => {
+          return response.text();
+        })
+        .then((json) => {
+          document.getElementById("res").innerText = json;
+        })
+        .catch((err) => console.log(err));
+    </script>
+  </head>
+  <body>
+    <h1 id="res">Loading...</h1>
+  </body>
+</html>
