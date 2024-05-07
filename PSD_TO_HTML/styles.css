@@ -64,6 +64,8 @@ body { background-color: #f5f5f5; overflow-x: hidden;}
 
 .nav-container { display: flex; margin-right: 14px;}
 
+.nav-toggle-btn { display: none;}
+
 /* .nav-container:hover { border-bottom: 4px solid #ff4081; cursor: pointer; margin-top: 4px;} */
 
 .active { margin-top: 4px; padding: 22px 0; border-bottom: 4px solid #ff4081;}

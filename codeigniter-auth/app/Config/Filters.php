@@ -34,6 +34,7 @@ class Filters extends BaseFilters
         'forcehttps'    => ForceHTTPS::class,
         'pagecache'     => PageCache::class,
         'performance'   => PerformanceMetrics::class,
+        'authGuard'     => \App\Filters\AuthGuard::class,
     ];
 
     /**
@@ -92,7 +93,9 @@ class Filters extends BaseFilters
      *
      * @var array<string, list<string>>
      */
-    public array $methods = [];
+    public array $methods = [
+        'post' => ['csrf'],    
+    ];
 
     /**
      * List of filter aliases that should run on any

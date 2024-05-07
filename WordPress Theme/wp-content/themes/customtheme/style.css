@@ -1,0 +1,29 @@
+/*
+Theme Name: Custom Theme
+Theme URI: https://wordpress.org/themes/custom-theme/
+Author: Tushar
+Version: 1.0
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: custom-theme
+*/
+
+body {
+  text-align: left;
+}
+#ttr_sidebar {
+  border-left: 1px solid black;
+}
+#ttr_footer {
+  width: 100%;
+  border-top: 1px #a2a2a2 solid;
+  text-align: center;
+}
+.title {
+  font-size: 11pt;
+  font-family: verdana;
+  font-weight: bold;
+}

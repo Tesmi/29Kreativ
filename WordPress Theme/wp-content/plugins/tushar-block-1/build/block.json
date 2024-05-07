@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tushar/tushar-block-1",
+  "version": "0.1.0",
+  "title": "Test Block",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "29Kreativ example block",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "textdomain": "tushar-block-1",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}
